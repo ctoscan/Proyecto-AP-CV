@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <audio autoplay>
+    <source src="Musica/Intro Inspard.mp3" type="audio/mpeg">
+    Su navegador no soporta formato audio.
+    </audio>
+    <title>Proyecto AP-CV</title>
+    <link rel="icon" type="image/x-icon" href="Imagenes/Relax.jpg">
+</head>
+
+<body class="container d-flex flex-column justify-content-center">
+
+    <div class="body">
+
+        <div class="title">
+          <h1 class="text-center"> Curriculum Vitae Moroco Topo </h1>
+        </div>   
+
+          <!-- La idea de este proyecto es presentar un CV diferente, divertido, entretenido de leer, espero lo disfruten -->
+
+          <br>
+
+        <div class="text-center">
+           <img src="Imagenes/Moroco Topo.jpg" alt="Foto Moroco Topo" onclick="goto()" class="rounded picture"> </img>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="titulos">
+          <h2> <u> Datos Personales </u> </h2>
+        </div>
+      
+        <div class="textos">
+           <ul>
+             <li> Nombre: Moroco </li>
+             <li> Apellido: Topo </li>
+             <li> Numero documento: 10367598 </li>
+             <li> Fecha de nacimiento: 31/08/1968 </li>
+             <li> Lugar de nacimeinto: Nueva York </li>
+             <li> Nacionalidad: EE.UU </li>
+             <li> Domicilio: NY 10112 </li>
+             <li> Edad: 55  </li>
+             <li> <a href= "https://es.wikipedia.org/wiki/Inspector_Ardilla"> <p> Referencia Wikipedia </p> </a> </li>
+           </ul>
+        </div>
+      
+        <br>
+
+        <div class="titulos">
+         <h2> <u> Objetivos: </u> </h2>
+        </div> 
+      
+            <ul>
+              <li> Acompaña al Inspector en sus misiones y ser el mejor ayudante de la historia.
+            </ul>
+        
+            <br>
+
+        <div class="titulos">
+         <h2> <u> Experiencia Laboral: </u> </h2>
+         <br>
+         <button onclick="video()" class="videobutton">Video Intro</button>
+        </div> 
+          <br>
+           <ul>
+             <li> 2 de octubre de 1965: Agente secreto 000 (Yellow Pinkie) </li>
+             <li> 9 de octubre de 1965: Un lobo con piel de oveja (Wolf In Cheap Cheap Clothing) </li>
+             <li> 16 de octubre de 1965: El caso de Scotland Yard (Scotland Yard Caper) </li>
+             <li> 2 de octubre de 1965: El Submarino desaparecido (Sub Swiper) </li>
+             <li> 6 de noviembre de 1965: Carrera Real (Royal Run Around) </li>
+             <li> 9 de octubre de 1965: La Abuela Enmascarada (Masked Granny) </li>
+             <li> 23 de octubre de 1965: Robin Hood y su pandilla de feos (Robin Hood & His Merry Muggs) </li>
+             <li> 20 de noviembre de 1965: Cinco son muchos (Five Is A Crowd) </li>
+             <li> 27 de noviembre de 1965: Sabotaje al tren (It Stopped Training) </li>
+             <li> 4 de diciembre de 1965: Arma secreta mortal (Wacky Secret Weapon) </li>
+           </ul>
+      
+           <br>
+
+         <div class="titulos">
+         <h2> <u> Títulos Academicos: </u> </h2>
+         </div>
+         
+         <br>
+
+           <ul>
+             <li> <img src="Imagenes/Diploma Insp Moroco Topo.jpg" alt="Error de visualización de imagen" style="width:350px;height:500px;border:rgb(238, 238, 123) 5px solid;"> <i><b><p> Diploma Inspector Rabat Marruecos </p></b></i> </li>
+             <br>
+             <li> <img src="Imagenes/Credencial Insp Moroco Topo.jpg" alt="Error de visualización de imagen" style="border:cornflowerblue 5px solid;"> <i><b><p> Credencial Inspector Rabat Marruecos </p></b></i> </li>
+           </ul>
+      
+           <br>
+
+           <div class="titulos">
+           <h2> <u> Idiomas y Habilidades: </u> </h2>
+           </div>
+      
+           <ul>
+             <li> Inglés: Nivel Medio  </li>
+             <li> Árabe: Nivel Avanzado </li>
+             <li> Español: Avanzado </li>
+             <li> Conocimientos en el aerea de criminologia </li>
+           </ul>
+      
+           <br>
+           <br>
+           <hr>
+           <br>
+           <br>
+
+           <h2 class="text-center title"> <i><u>Formulario</u></i> </h2>
+
+           <br>
+
+            <form action="/formulario" method="GET">
+              <p><i><b> Si el proyecto tiene su aprobación por favor envíe una respuesta con el siguiente formulario: </b></i></p>
+              <label for="fname">Nombre:</label><br>
+              <input placeholder="Ingrese su nombre" type="text" id="fname" name="nombre"><br>
+              <label for="lname">Apellido:</label><br>
+              <input placeholder="Ingrese su apellido" type="text" id="lname" name="apellido"><br>
+              <p><i><b>Seleccione la opcion que mejor se adapte a su devolución</b></i></p>
+              <input type="radio" id="bueno" name="devolucion" value="Bueno">
+              <label for="bueno">Bueno</label><br>
+              <input type="radio" id="regular" name="devolucion" value="Regular">
+              <label for="regular">Regular</label><br>
+              <input type="radio" id="malo" name="devolucion" value="Malo">
+              <label for="malo">Malo</label><br>
+              <p><i><b>Seleccione su respuesta final</b></i></p>
+              <input type="checkbox" id="opcion1" name="calificacion" value="Aprobado">
+              <label for="opcion1">Aprobado</label><br>
+              <input type="checkbox" id="opcion2" name="calificacion" value="Desaprobado">
+              <label for="opcion2">Desaprobado</label><br>
+              <input type="button" value="Enviar" id="Enviar" onclick="enviar()">
+            </form>
+
+           <br>
+
+           </div>
+
+<script src="JS/index.js"></script>
+      
+</body>
+</html>
